@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
   total = name_hash.sum {|key, value| value}
   name_hash.each do |k, v| 
     name_hash[k] = total - v
-  p name_hash
+  puts name_hash
   end 
 end
 
