@@ -6,7 +6,9 @@ def key_for_min_value(name_hash)
   new_hash = {}
   total = name_hash.sum {|key, value| value}
   name_hash.each do |k, v| 
-    p "{#{k} => #{total-v}"
+    string = "#{k} => #{total-v}"
+    difference << string
+    puts difference 
   end 
 end
 
