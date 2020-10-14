@@ -9,6 +9,6 @@ def key_for_min_value(name_hash)
     name_hash[k] = total - v
   end 
   new_hash = name_hash.max_by{|k, v| v}
-  puts new_hash[0]
+  puts new_hash[1]
 end
 key_for_min_value({:chair => 25, :table => 85, :mattress => 450})
