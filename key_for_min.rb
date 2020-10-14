@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
     name_hash[k] = total - v
   end 
   new_hash = name_hash.max_by{|k, v| v}
-  if new_hash[0][0].class != Integer 
+  if new_hash[0][1].class != Integer 
     return nil 
   else 
   puts new_hash[0]
