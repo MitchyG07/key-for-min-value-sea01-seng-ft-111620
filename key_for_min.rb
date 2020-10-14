@@ -5,7 +5,6 @@ def key_for_min_value(name_hash)
   if name_hash == {}
     return nil 
   else
-  difference =[]
   new_hash = {}
   total = name_hash.sum {|key, value| value}
   name_hash.each do |k, v| 
