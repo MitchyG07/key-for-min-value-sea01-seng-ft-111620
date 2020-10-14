@@ -10,7 +10,7 @@ def key_for_min_value(name_hash)
   end 
   new_hash = name_hash.max_by{|k, v| v}
   if new_hash[1].class == Integer
-    puts new_hash[0]
+    return new_hash[0]
   end
 end
 key_for_min_value({:chair => 25, :table => 85, :mattress => 450})
