@@ -11,6 +11,7 @@ def key_for_min_value(name_hash)
   new_hash = name_hash.max_by{|k, v| v}
   if new_hash[1].class == Integer
     return new_hash[0]
+    puts new_hash[0]
   else 
     return nil
   end
